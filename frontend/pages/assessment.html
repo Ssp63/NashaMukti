@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self-Assessment - Nasha Mukti Portal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/assessment.css">
+</head>
+<body>
+    <div class="language-toggle">
+        <select id="language-selector">
+            <option value="english">English</option>
+            <option value="marathi">मराठी</option>
+        </select>
+    </div>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="../assets/images/logo.jpeg" alt="Nasha Mukti Portal Logo">
+                <div class="logo-text">
+                    <h1>Nasha Mukti Portal</h1>
+                    <p>Sangli Zilla Parishad</p>
+                </div>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="../index.html" data-en="Home" data-mr="मुख्यपृष्ठ">Home</a></li>
+                    <li><a href="about.html" data-en="About Us" data-mr="आमच्याबद्दल">About Us</a></li>
+                    <li><a href="addiction.html" data-en="Understanding Addiction" data-mr="व्यसन समजून घेणे">Understanding Addiction</a></li>
+                    <li><a href="assessment.html" class="active" data-en="Self-Assessment" data-mr="स्वयं-मूल्यांकन">Self-Assessment</a></li>
+                    <li><a href="treatment.html" data-en="Treatment" data-mr="उपचार">Treatment</a></li>
+                    <li><a href="find-help.html" data-en="Find Help" data-mr="मदत शोधा">Find Help</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <button id="login-btn" class="btn btn-outline" data-en="Login" data-mr="लॉगिन">Login</button>
+                <button id="register-btn" class="btn btn-primary" data-en="Register" data-mr="नोंदणी">Register</button>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <div class="page-banner">
+        <div class="container">
+            <h1 data-en="Self-Assessment" data-mr="स्वयं-मूल्यांकन">Self-Assessment</h1>
+            <p data-en="Take a confidential assessment to understand your relationship with substances" data-mr="पदार्थांशी आपल्या संबंधाबद्दल समजून घेण्यासाठी गोपनीय मूल्यांकन करा">Take a confidential assessment to understand your relationship with substances</p>
+        </div>
+    </div>
+
+    <section class="assessment-intro">
+        <div class="container">
+            <div class="assessment-info">
+                <h2 data-en="Why Take an Assessment?" data-mr="मूल्यांकन का करावे?">Why Take an Assessment?</h2>
+                <p data-en="Understanding if you have an addiction problem is the first step toward recovery. Our assessments are designed to help you evaluate your substance use patterns and determine if professional help might be needed." data-mr="आपल्याला व्यसनाची समस्या आहे की नाही हे समजून घेणे हे पुनर्प्राप्तीकडे टाकलेले पहिले पाऊल आहे. आमची मूल्यांकने आपल्याला आपल्या पदार्थ वापराच्या पद्धती मूल्यांकन करण्यास आणि व्यावसायिक मदत आवश्यक असू शकते की नाही हे निर्धारित करण्यास मदत करण्यासाठी डिझाइन केलेली आहेत.">Understanding if you have an addiction problem is the first step toward recovery. Our assessments are designed to help you evaluate your substance use patterns and determine if professional help might be needed.</p>
+                <div class="assessment-features">
+                    <div class="feature">
+                        <div class="icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <h3 data-en="Completely Confidential" data-mr="पूर्णपणे गोपनीय">Completely Confidential</h3>
+                        <p data-en="Your responses are anonymous and private" data-mr="आपली उत्तरे अनामिक आणि खाजगी आहेत">Your responses are anonymous and private</p>
+                    </div>
+                    <div class="feature">
+                        <div class="icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3 data-en="Quick & Easy" data-mr="जलद आणि सोपे">Quick & Easy</h3>
+                        <p data-en="Takes only 5-10 minutes to complete" data-mr="पूर्ण होण्यास फक्त 5-10 मिनिटे लागतात">Takes only 5-10 minutes to complete</p>
+                    </div>
+                    <div class="feature">
+                        <div class="icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 data-en="Scientifically Validated" data-mr="वैज्ञानिकदृष्ट्या प्रमाणित">Scientifically Validated</h3>
+                        <p data-en="Based on established clinical assessments" data-mr="स्थापित क्लिनिकल मूल्यांकनांवर आधारित">Based on established clinical assessments</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="assessment-types">
+        <div class="container">
+            <h2 class="section-title" data-en="Choose an Assessment" data-mr="मूल्यांकन निवडा">Choose an Assessment</h2>
+            <div class="assessment-cards">
+                <div class="assessment-card">
+                    <div class="assessment-icon">
+                        <i class="fas fa-wine-bottle"></i>
+                    </div>
+                    <h3 data-en="Alcohol Use Assessment" data-mr="मद्य वापर मूल्यांकन">Alcohol Use Assessment</h3>
+                    <p data-en="Evaluate your drinking habits and potential alcohol dependency" data-mr="आपल्या मद्यपान सवयी आणि संभाव्य अल्कोहोल अवलंबित्व मूल्यांकन करा">Evaluate your drinking habits and potential alcohol dependency</p>
+                    <button class="btn btn-primary start-assessment" data-type="alcohol" data-en="Start Assessment" data-mr="मूल्यांकन सुरू करा">Start Assessment</button>
+                </div>
+                <div class="assessment-card">
+                    <div class="assessment-icon">
+                        <i class="fas fa-pills"></i>
+                    </div>
+                    <h3 data-en="Drug Use Assessment" data-mr="औषध वापर मूल्यांकन">Drug Use Assessment</h3>
+                    <p data-en="Evaluate your use of illicit or prescription drugs" data-mr="आपल्या बेकायदेशीर किंवा प्रिस्क्रिप्शन औषधांच्या वापराचे मूल्यांकन करा">Evaluate your use of illicit or prescription drugs</p>
+                    <button class="btn btn-primary start-assessment" data-type="drug" data-en="Start Assessment" data-mr="मूल्यांकन सुरू करा">Start Assessment</button>
+                </div>
+                <div class="assessment-card">
+                    <div class="assessment-icon">
+                        <i class="fas fa-smoking"></i>
+                    </div>
+                    <h3 data-en="Tobacco Use Assessment" data-mr="तंबाखू वापर मूल्यांकन">Tobacco Use Assessment</h3>
+                    <p data-en="Evaluate your tobacco use and nicotine dependence" data-mr="आपल्या तंबाखूच्या वापराचे आणि निकोटीन अवलंबनाचे मूल्यांकन करा">Evaluate your tobacco use and nicotine dependence</p>
+                    <button class="btn btn-primary start-assessment" data-type="tobacco" data-en="Start Assessment" data-mr="मूल्यांकन सुरू करा">Start Assessment</button>
+                </div>
+                <div class="assessment-card">
+                    <div class="assessment-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3 data-en="Behavioral Addiction Assessment" data-mr="वर्तणूक व्यसन मूल्यांकन">Behavioral Addiction Assessment</h3>
+                    <p data-en="Evaluate potential gambling, gaming, or internet addiction" data-mr="संभाव्य जुगार, गेमिंग किंवा इंटरनेट व्यसनाचे मूल्यांकन करा">Evaluate potential gambling, gaming, or internet addiction</p>
+                    <button class="btn btn-primary start-assessment" data-type="behavioral" data-en="Start Assessment" data-mr="मूल्यांकन सुरू करा">Start Assessment</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Assessment Quiz Container (initially hidden) -->
+    <section class="assessment-quiz" id="assessment-quiz" style="display: none;">
+        <div class="container">
+            <div class="quiz-header">
+                <h2 id="quiz-title">Alcohol Use Assessment</h2>
+                <p id="quiz-description">Please answer the following questions honestly to get an accurate assessment.</p>
+            </div>
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div class="progress" id="quiz-progress"></div>
+                </div>
+                <p class="progress-text"><span id="current-question">1</span> of <span id="total-questions">10</span></p>
+            </div>
+            <div class="quiz-container">
+                <form id="quiz-form">
+                    <div class="question-container">
+                        <h3 id="question-text">Question text will appear here</h3>
+                        <div class="options-container" id="options-container">
+                            <!-- Options will be dynamically added here -->
+                        </div>
+                    </div>
+                    <div class="quiz-navigation">
+                        <button type="button" id="prev-btn" class="btn btn-outline" disabled data-en="Previous" data-mr="मागील">Previous</button>
+                        <button type="button" id="next-btn" class="btn btn-primary" data-en="Next" data-mr="पुढील">Next</button>
+                        <button type="submit" id="submit-btn" class="btn btn-primary" style="display: none;" data-en="Submit" data-mr="सबमिट करा">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Assessment Results Container (initially hidden) -->
+    <section class="assessment-results" id="assessment-results" style="display: none;">
+        <div class="container">
+            <div class="results-header">
+                <h2 data-en="Your Assessment Results" data-mr="आपल्या मूल्यांकनाचे निकाल">Your Assessment Results</h2>
+                <p data-en="Based on your responses, here's what we've found" data-mr="आपल्या प्रतिसादांवर आधारित, आम्हाला हे आढळले आहे">Based on your responses, here's what we've found</p>
+            </div>
+            <div class="results-container">
+                <div class="result-score">
+                    <div class="score-circle">
+                        <span id="result-score">0</span>/10
+                    </div>
+                    <h3 id="result-level" data-en="Risk Level: Low" data-mr="जोखीम पातळी: कमी">Risk Level: Low</h3>
+                </div>
+                <div class="result-details">
+                    <h3 data-en="What This Means" data-mr="याचा अर्थ काय">What This Means</h3>
+                    <p id="result-explanation">Your assessment result explanation will appear here.</p>
+                    
+                    <h3 data-en="Recommendations" data-mr="शिफारसी">Recommendations</h3>
+                    <p id="result-recommendations">Recommendations based on your assessment will appear here.</p>
+                    
+                    <div class="next-steps">
+                        <h3 data-en="Next Steps" data-mr="पुढील पावले">Next Steps</h3>
+                        <div class="next-steps-buttons">
+                            <a href="find-help.html" class="btn btn-primary" data-en="Find Help Near You" data-mr="आपल्या जवळील मदत शोधा">Find Help Near You</a>
+                            <a href="treatment.html" class="btn btn-secondary" data-en="Explore Treatment Options" data-mr="उपचार पर्याय शोधा">Explore Treatment Options</a>
+                            <a href="#" id="take-another-assessment" class="btn btn-outline" data-en="Take Another Assessment" data-mr="दुसरे मूल्यांकन करा">Take Another Assessment</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2 data-en="Need to Talk to Someone?" data-mr="कुणाशी बोलायची गरज आहे?">Need to Talk to Someone?</h2>
+            <p data-en="If you're concerned about your assessment results, remember that help is available" data-mr="आपल्या मूल्यांकनाच्या निकालांबद्दल आपण चिंतित असल्यास, लक्षात ठेवा की मदत उपलब्ध आहे">If you're concerned about your assessment results, remember that help is available</p>
+            <div class="cta-buttons">
+                <a href="tel:1800-11-0031" class="btn btn-primary" data-en="Call Helpline" data-mr="हेल्पलाइनला कॉल करा">Call Helpline</a>
+                <a href="find-help.html" class="btn btn-secondary" data-en="Find Support" data-mr="समर्थन शोधा">Find Support</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="../assets/images/logo.png" alt="Nasha Mukti Portal Logo">
+                        <h3>Nasha Mukti Portal</h3>
+                    </div>
+                    <p data-en="An initiative by Sangli Zilla Parishad to combat addiction and support recovery" data-mr="व्यसनाविरुद्ध लढण्यासाठी आणि पुनर्प्राप्तीला समर्थन देण्यासाठी सांगली जिल्हा परिषदेचा एक उपक्रम">An initiative by Sangli Zilla Parishad to combat addiction and support recovery</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 data-en="Quick Links" data-mr="त्वरित दुवे">Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html" data-en="Home" data-mr="मुख्यपृष्ठ">Home</a></li>
+                        <li><a href="about.html" data-en="About Us" data-mr="आमच्याबद्दल">About Us</a></li>
+                        <li><a href="addiction.html" data-en="Understanding Addiction" data-mr="व्यसन समजून घेणे">Understanding Addiction</a></li>
+                        <li><a href="treatment.html" data-en="Treatment" data-mr="उपचार">Treatment</a></li>
+                        <li><a href="find-help.html" data-en="Find Help" data-mr="मदत शोधा">Find Help</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 data-en="Resources" data-mr="संसाधने">Resources</h4>
+                    <ul>
+                        <li><a href="resources.html" data-en="Videos" data-mr="व्हिडिओ">Videos</a></li>
+                        <li><a href="resources.html" data-en="Parent Guides" data-mr="पालक मार्गदर्शिका">Parent Guides</a></li>
+                        <li><a href="resources.html" data-en="Legal Help" data-mr="कायदेशीर मदत">Legal Help</a></li>
+                        <li><a href="community.html" data-en="Community Forum" data-mr="समुदाय मंच">Community Forum</a></li>
+                        <li><a href="events.html" data-en="Events" data-mr="कार्यक्रम">Events</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 data-en="Contact Us" data-mr="संपर्क करा">Contact Us</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> <span data-en="Sangli Zilla Parishad, Maharashtra" data-mr="सांगली जिल्हा परिषद, महाराष्ट्र">Sangli Zilla Parishad, Maharashtra</span></li>
+                        <li><i class="fas fa-phone-alt"></i> <a href="tel:1800-11-0031">1800-11-0031 (Toll Free)</a></li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:info@nashmuktisangli.gov.in">info@nashmuktisangli.gov.in</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Nasha Mukti Portal - Sangli Zilla Parishad. All Rights Reserved.</p>
+                <ul class="footer-bottom-links">
+                    <li><a href="privacy-policy.html" data-en="Privacy Policy" data-mr="गोपनीयता धोरण">Privacy Policy</a></li>
+                    <li><a href="terms.html" data-en="Terms of Use" data-mr="वापरण्याच्या अटी">Terms of Use</a></li>
+                    <li><a href="disclaimer.html" data-en="Disclaimer" data-mr="अस्वीकरण">Disclaimer</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login & Register Modals (same as index.html) -->
+    <div class="modal" id="login-modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 data-en="Login" data-mr="लॉगिन">Login</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="login-email" data-en="Email" data-mr="ईमेल">Email</label>
+                    <input type="email" id="login-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password" data-en="Password" data-mr="पासवर्ड">Password</label>
+                    <input type="password" id="login-password" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block" data-en="Login" data-mr="लॉगिन">Login</button>
+                <div class="form-footer">
+                    <a href="#" id="forgot-password" data-en="Forgot Password?" data-mr="पासवर्ड विसरलात?">Forgot Password?</a>
+                    <p data-en="Don't have an account?" data-mr="खाते नाही?">Don't have an account? <a href="#" id="show-register" data-en="Register" data-mr="नोंदणी करा">Register</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal" id="register-modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 data-en="Create Account" data-mr="खाते तयार करा">Create Account</h2>
+            <form id="register-form">
+                <div class="form-group">
+                    <label for="register-name" data-en="Full Name" data-mr="पूर्ण नाव">Full Name</label>
+                    <input type="text" id="register-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-email" data-en="Email" data-mr="ईमेल">Email</label>
+                    <input type="email" id="register-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-phone" data-en="Phone Number" data-mr="फोन नंबर">Phone Number</label>
+                    <input type="tel" id="register-phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-password" data-en="Password" data-mr="पासवर्ड">Password</label>
+                    <input type="password" id="register-password" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-confirm-password" data-en="Confirm Password" data-mr="पासवर्ड पुष्टी करा">Confirm Password</label>
+                    <input type="password" id="register-confirm-password" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block" data-en="Register" data-mr="नोंदणी करा">Register</button>
+                <div class="form-footer">
+                    <p data-en="Already have an account?" data-mr="आधीपासूनच खाते आहे?">Already have an account? <a href="#" id="show-login" data-en="Login" data-mr="लॉगिन">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/assessment.js"></script>
+</body>
+</html> 

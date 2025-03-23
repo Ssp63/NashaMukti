@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Forum - Nasha Mukti Portal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+    <div class="language-toggle">
+        <select id="language-selector">
+            <option value="english">English</option>
+            <option value="marathi">मराठी</option>
+        </select>
+    </div>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="../../assets/images/logo.jpeg" alt="Nasha Mukti Portal Logo">
+                <div class="logo-text">
+                    <h1 data-en="Nasha Mukti Portal" data-mr="नशा मुक्ती पोर्टल">Nasha Mukti Portal</h1>
+                    <p data-en="Sangli Zilla Parishad" data-mr="सांगली जिल्हा परिषद">Sangli Zilla Parishad</p>
+                </div>
+            </div>
+            
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="../../index.html" data-en="Home" data-mr="मुख्यपृष्ठ">Home</a></li>
+                    <li><a href="../about.html" data-en="About Us" data-mr="आमच्याबद्दल">About Us</a></li>
+                    <li><a href="../addiction.html" data-en="Understanding Addiction" data-mr="व्यसन समजून घेणे">Understanding Addiction</a></li>
+                    <li><a href="../assessment.html" data-en="Self-Assessment" data-mr="स्वयं-मूल्यांकन">Self-Assessment</a></li>
+                    <li><a href="../treatment.html" data-en="Treatment" data-mr="उपचार">Treatment</a></li>
+                    <li><a href="../find-help.html" data-en="Find Help" data-mr="मदत शोधा">Find Help</a></li>
+                </ul>
+            </nav>
+            
+            <div class="auth-buttons">
+                <button id="login-btn" class="btn btn-outline" data-en="Login" data-mr="लॉगिन">Login</button>
+                <button id="register-btn" class="btn btn-primary" data-en="Register" data-mr="नोंदणी">Register</button>
+            </div>
+            
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <div class="page-banner">
+        <div class="container">
+            <h1 data-en="Community Forum" data-mr="समुदाय मंच">Community Forum</h1>
+            <p data-en="Share experiences, ask questions, and support each other" data-mr="अनुभव सामायिक करा, प्रश्न विचारा आणि एकमेकांना समर्थन द्या">Share experiences, ask questions, and support each other</p>
+        </div>
+    </div>
+
+    <section class="forum-categories">
+        <div class="container">
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-road"></i>
+                    </div>
+                    <h2 data-en="Recovery Journey" data-mr="पुनर्प्राप्ती प्रवास">Recovery Journey</h2>
+                    <p data-en="Share your recovery experiences and milestones" data-mr="आपले पुनर्प्राप्तीचे अनुभव आणि टप्पे सामायिक करा">Share your recovery experiences and milestones</p>
+                    <div class="category-stats">
+                        <span><i class="fas fa-comments"></i> 150 Topics</span>
+                        <span><i class="fas fa-users"></i> 500 Members</span>
+                    </div>
+                    <a href="#" class="btn btn-outline" data-en="Join Discussion" data-mr="चर्चेत सामील व्हा">Join Discussion</a>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h2 data-en="Support & Encouragement" data-mr="समर्थन आणि प्रोत्साहन">Support & Encouragement</h2>
+                    <p data-en="Give and receive support from the community" data-mr="समुदायाकडून समर्थन द्या आणि मिळवा">Give and receive support from the community</p>
+                    <div class="category-stats">
+                        <span><i class="fas fa-comments"></i> 200 Topics</span>
+                        <span><i class="fas fa-users"></i> 750 Members</span>
+                    </div>
+                    <a href="#" class="btn btn-outline" data-en="Join Discussion" data-mr="चर्चेत सामील व्हा">Join Discussion</a>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h2 data-en="Family Support" data-mr="कुटुंब समर्थन">Family Support</h2>
+                    <p data-en="Connect with other families affected by addiction" data-mr="व्यसनाने प्रभावित इतर कुटुंबांशी जोडा">Connect with other families affected by addiction</p>
+                    <div class="category-stats">
+                        <span><i class="fas fa-comments"></i> 180 Topics</span>
+                        <span><i class="fas fa-users"></i> 600 Members</span>
+                    </div>
+                    <a href="#" class="btn btn-outline" data-en="Join Discussion" data-mr="चर्चेत सामील व्हा">Join Discussion</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="recent-discussions">
+        <div class="container">
+            <h2 class="section-title" data-en="Recent Discussions" data-mr="अलीकडील चर्चा">Recent Discussions</h2>
+            <div class="discussions-list">
+                <div class="discussion-item">
+                    <div class="discussion-avatar">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="discussion-content">
+                        <h3 data-en="Starting My Recovery Journey" data-mr="माझा पुनर्प्राप्ती प्रवास सुरू करत आहे">Starting My Recovery Journey</h3>
+                        <p class="discussion-preview">Looking for advice on taking the first steps...</p>
+                        <div class="discussion-meta">
+                            <span><i class="fas fa-user"></i> Anonymous</span>
+                            <span><i class="fas fa-clock"></i> 2 hours ago</span>
+                            <span><i class="fas fa-comments"></i> 15 replies</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="discussion-item">
+                    <div class="discussion-avatar">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="discussion-content">
+                        <h3 data-en="Supporting a Family Member" data-mr="कुटुंबातील सदस्याला समर्थन">Supporting a Family Member</h3>
+                        <p class="discussion-preview">Need guidance on helping my brother...</p>
+                        <div class="discussion-meta">
+                            <span><i class="fas fa-user"></i> Anonymous</span>
+                            <span><i class="fas fa-clock"></i> 5 hours ago</span>
+                            <span><i class="fas fa-comments"></i> 8 replies</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="view-all">
+                <a href="#" class="btn btn-outline" data-en="View All Discussions" data-mr="सर्व चर्चा पहा">View All Discussions</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="forum-guidelines">
+        <div class="container">
+            <h2 class="section-title" data-en="Forum Guidelines" data-mr="मंच मार्गदर्शक तत्त्वे">Forum Guidelines</h2>
+            <div class="guidelines-content">
+                <ul class="guidelines-list">
+                    <li data-en="Be respectful and supportive" data-mr="आदरयुक्त आणि समर्थक रहा">Be respectful and supportive</li>
+                    <li data-en="Maintain anonymity" data-mr="गोपनीयता राखा">Maintain anonymity</li>
+                    <li data-en="No hate speech or discrimination" data-mr="द्वेषपूर्ण भाषण किंवा भेदभाव नाही">No hate speech or discrimination</li>
+                    <li data-en="Report inappropriate content" data-mr="अयोग्य सामग्री रिपोर्ट करा">Report inappropriate content</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="../../assets/images/logo.png" alt="Nasha Mukti Portal Logo">
+                    <h3 data-en="Nasha Mukti Portal" data-mr="नशा मुक्ती पोर्टल">Nasha Mukti Portal</h3>
+                    <p data-en="Sangli Zilla Parishad" data-mr="सांगली जिल्हा परिषद">Sangli Zilla Parishad</p>
+                </div>
+                <div class="footer-links">
+                    <h3 data-en="Quick Links" data-mr="त्वरित दुवे">Quick Links</h3>
+                    <ul>
+                        <li><a href="../../index.html" data-en="Home" data-mr="मुख्यपृष्ठ">Home</a></li>
+                        <li><a href="../about.html" data-en="About Us" data-mr="आमच्याबद्दल">About Us</a></li>
+                        <li><a href="../addiction.html" data-en="Understanding Addiction" data-mr="व्यसन समजून घेणे">Understanding Addiction</a></li>
+                        <li><a href="../assessment.html" data-en="Self-Assessment" data-mr="स्वयं-मूल्यांकन">Self-Assessment</a></li>
+                        <li><a href="../treatment.html" data-en="Treatment" data-mr="उपचार">Treatment</a></li>
+                        <li><a href="../find-help.html" data-en="Find Help" data-mr="मदत शोधा">Find Help</a></li>
+                    </ul>
+                </div>
+                <div class="footer-resources">
+                    <h3 data-en="Resources" data-mr="संसाधने">Resources</h3>
+                    <ul>
+                        <li><a href="videos.html" data-en="Videos" data-mr="व्हिडिओ">Videos</a></li>
+                        <li><a href="parent-guides.html" data-en="Parent Guides" data-mr="पालक मार्गदर्शक">Parent Guides</a></li>
+                        <li><a href="legal-help.html" data-en="Legal Help" data-mr="कायदेशीर मदत">Legal Help</a></li>
+                        <li><a href="community-forum.html" data-en="Community Forum" data-mr="समुदाय मंच">Community Forum</a></li>
+                        <li><a href="events.html" data-en="Events" data-mr="कार्यक्रम">Events</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3 data-en="Contact Us" data-mr="आमच्याशी संपर्क साधा">Contact Us</h3>
+                    <p><i class="fas fa-phone"></i> +91 233 2372345</p>
+                    <p><i class="fas fa-envelope"></i> info@nashamukti.sangli.gov.in</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Sangli Zilla Parishad, Sangli, Maharashtra</p>
+                </div>
+                <div class="footer-social">
+                    <h3 data-en="Follow Us" data-mr="आमच्या मागे या">Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Nasha Mukti Portal - Sangli Zilla Parishad. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../assets/js/script.js"></script>
+</body>
+</html> 
