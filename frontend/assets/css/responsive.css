@@ -1,0 +1,167 @@
+/* Responsive Styles */
+
+/* General Responsive Styles */
+@media screen and (max-width: 1200px) {
+    .container {
+        max-width: 95%;
+        padding: 0 20px;
+    }
+}
+
+/* Tablet Styles */
+@media screen and (max-width: 992px) {
+    /* Navigation */
+    .nav-menu {
+        display: none;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .nav-menu.active {
+        display: block;
+    }
+
+    .nav-menu li {
+        display: block;
+        margin: 15px 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    /* Grid Layouts */
+    .footer-grid,
+    .resources-grid,
+    .treatment-grid,
+    .addiction-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    /* Sections */
+    .section-content {
+        flex-direction: column;
+    }
+
+    .section-image {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .section-image img {
+        max-width: 100%;
+    }
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+    /* Header */
+    .logo-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .auth-buttons {
+        display: none;
+    }
+
+    /* Grid Layouts */
+    .footer-grid,
+    .resources-grid,
+    .treatment-grid,
+    .addiction-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Cards */
+    .treatment-card,
+    .addiction-card,
+    .resource-card {
+        padding: 15px;
+    }
+
+    /* Footer */
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-bottom-links {
+        margin-top: 15px;
+    }
+
+    /* Forms and Inputs */
+    input, select, textarea {
+        width: 100%;
+    }
+
+    /* Buttons */
+    .btn {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    /* Language Toggle */
+    .language-toggle {
+        position: static;
+        margin: 10px auto;
+        text-align: center;
+    }
+}
+
+/* Small Mobile Styles */
+@media screen and (max-width: 480px) {
+    /* Typography */
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    /* Spacing */
+    .section-title {
+        margin-bottom: 20px;
+    }
+
+    /* Cards */
+    .card {
+        margin: 10px 0;
+    }
+
+    /* Images */
+    .story-image img {
+        height: 200px;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .nav-menu,
+    .auth-buttons,
+    .hamburger,
+    .language-toggle {
+        display: none;
+    }
+
+    .container {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-size: 12pt;
+        line-height: 1.5;
+    }
+} 

@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nasha Mukti Portal - Sangli Zilla Parishad</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="language-toggle">
+        <select id="language-selector">
+            <option value="english">English</option>
+            <option value="marathi">मराठी</option>
+        </select>
+    </div>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="assets/images/logo.jpeg" alt="Nasha Mukti Portal Logo">
+                <div class="logo-text">
+                    <h1 data-en="Nasha Mukti Portal" data-mr="नशा मुक्ती पोर्टल">Nasha Mukti Portal</h1>
+                    <p data-en="Sangli Zilla Parishad" data-mr="सांगली जिल्हा परिषद">Sangli Zilla Parishad</p>
+                </div>
+            </div>
+            
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active" data-en="Home" data-mr="मुख्यपृष्ठ">Home</a></li>
+                    <li><a href="pages/about.html" data-en="About Us" data-mr="आमच्याबद्दल">About Us</a></li>
+                    <li><a href="pages/addiction.html" data-en="Understanding Addiction" data-mr="व्यसन समजून घेणे">Understanding Addiction</a></li>
+                    <li><a href="pages/assessment.html" data-en="Self-Assessment" data-mr="स्वयं-मूल्यांकन">Self-Assessment</a></li>
+                    <li><a href="pages/treatment.html" data-en="Treatment" data-mr="उपचार">Treatment</a></li>
+                    <li><a href="pages/find-help.html" data-en="Find Help" data-mr="मदत शोधा">Find Help</a></li>
+                </ul>
+            </nav>
+            
+            <div class="auth-buttons">
+                <button id="login-btn" class="btn btn-outline" data-en="Login" data-mr="लॉगिन">Login</button>
+                <button id="register-btn" class="btn btn-primary" data-en="Register" data-mr="नोंदणी">Register</button>
+            </div>
+            
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 data-en="Your Journey to Recovery Starts Here" data-mr="आपली पुनर्प्राप्ती येथून सुरू होते">Your Journey to Recovery Starts Here</h1>
+                <p data-en="Take the first step towards a healthier life. We're here to support you with confidential assessments, professional guidance, and community support." data-mr="निरोगी जीवनाकडे पहिले पाऊल टाका. आम्ही गोपनीय मूल्यांकन, व्यावसायिक मार्गदर्शन आणि सामुदायिक समर्थनासह आपल्यासोबत आहोत.">Take the first step towards a healthier life. We're here to support you with confidential assessments, professional guidance, and community support.</p>
+                <div class="hero-buttons">
+                    <a href="pages/assessment.html" class="btn btn-primary" data-en="Take Assessment" data-mr="मूल्यांकन करा">
+                        <i class="fas fa-clipboard-check"></i> Take Assessment
+                    </a>
+                    <a href="pages/find-help.html" class="btn btn-outline" data-en="Find Help" data-mr="मदत शोधा">
+                        <i class="fas fa-hand-holding-heart"></i> Find Help
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="assets/images/recovery.jpeg" alt="Recovery Journey">
+            </div>
+        </div>
+    </section>
+
+    <section class="user-sections">
+        <div class="container">
+            <h2 class="section-title" data-en="I am..." data-mr="मी आहे...">I am...</h2>
+            <div class="user-grid">
+                <div class="user-card">
+                    <!-- <img src="assets/images/seeking-help.jpg" alt="Individual seeking help"> -->
+                    <div class="user-card-content">
+                        <h3 data-en="Seeking Help" data-mr="मदत शोधत">Seeking Help</h3>
+                        <p data-en="Take our confidential assessment and find personalized support for your recovery journey." data-mr="आमचे गोपनीय मूल्यांकन करा आणि आपल्या पुनर्प्राप्तीच्या प्रवासासाठी वैयक्तिक समर्थन मिळवा.">Take our confidential assessment and find personalized support for your recovery journey.</p>
+                        <a href="pages/assessment.html" class="btn btn-primary" data-en="Start Assessment" data-mr="मूल्यांकन सुरू करा">Start Assessment</a>
+                    </div>
+                </div>
+                <div class="user-card">
+                    <!-- <img src="assets/images/family-support.jpg" alt="Family support"> -->
+                    <div class="user-card-content">
+                        <h3 data-en="Family Member" data-mr="कुटुंबातील सदस्य">Family Member</h3>
+                        <p data-en="Learn how to support your loved one and find resources for families affected by addiction." data-mr="आपल्या प्रियजनांना कसे समर्थन द्यावे आणि व्यसनाने प्रभावित कुटुंबांसाठी संसाधने शोधा हे शिका.">Learn how to support your loved one and find resources for families affected by addiction.</p>
+                        <a href="pages/family-support.html" class="btn btn-primary" data-en="Get Support" data-mr="समर्थन मिळवा">Get Support</a>
+                    </div>
+                </div>
+                <div class="user-card">
+                    <!-- <img src="assets/images/healthcare.jpg" alt="Healthcare Professional"> -->
+                    <div class="user-card-content">
+                        <h3 data-en="Healthcare Professional" data-mr="आरोग्य व्यावसायिक">Healthcare Professional</h3>
+                        <p data-en="Access resources and tools to help your clients, and join our network of treatment providers." data-mr="आपल्या ग्राहकांना मदत करण्यासाठी संसाधने आणि साधने मिळवा, आणि आमच्या उपचार प्रदात्यांच्या नेटवर्कमध्ये सामील व्हा.">Access resources and tools to help your clients, and join our network of treatment providers.</p>
+                        <a href="pages/professionals.html" class="btn btn-primary" data-en="Join Network" data-mr="नेटवर्कमध्ये सामील व्हा">Join Network</a>
+                    </div>
+                </div>
+                <div class="user-card">
+                    <!-- <img src="assets/images/community.jpg" alt="Community Leader"> -->
+                    <div class="user-card-content">
+                        <h3 data-en="Community Leader" data-mr="समुदाय नेता">Community Leader</h3>
+                        <p data-en="Get resources and support to create awareness and prevention programs in your community." data-mr="आपल्या समुदायात जागरूकता आणि प्रतिबंध कार्यक्रम तयार करण्यासाठी संसाधने आणि समर्थन मिळवा.">Get resources and support to create awareness and prevention programs in your community.</p>
+                        <a href="pages/community.html" class="btn btn-primary" data-en="Get Resources" data-mr="संसाधने मिळवा">Get Resources</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="quick-links">
+        <div class="container">
+            <h2 class="section-title" data-en="Quick Links" data-mr="त्वरित दुवे">Quick Links</h2>
+            <div class="links-grid">
+                <a href="tel:1800-11-0031" class="quick-link-card">
+                    <div class="icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3 data-en="National Helpline" data-mr="राष्ट्रीय हेल्पलाइन">National Helpline</h3>
+                    <p>1800-11-0031</p>
+                </a>
+                <a href="pages/assessment.html" class="quick-link-card">
+                    <div class="icon">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <h3 data-en="Self Assessment" data-mr="स्वयं मूल्यांकन">Self Assessment</h3>
+                    <p data-en="Check your addiction level" data-mr="आपले व्यसन स्तर तपासा">Check your addiction level</p>
+                </a>
+                <a href="pages/treatment.html" class="quick-link-card">
+                    <div class="icon">
+                        <i class="fas fa-hand-holding-medical"></i>
+                    </div>
+                    <h3 data-en="Treatment Options" data-mr="उपचार पर्याय">Treatment Options</h3>
+                    <p data-en="Explore ways to recover" data-mr="बरे होण्याचे मार्ग शोधा">Explore ways to recover</p>
+                </a>
+                <a href="pages/find-help.html" class="quick-link-card">
+                    <div class="icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3 data-en="Rehab Centers" data-mr="पुनर्वसन केंद्रे">Rehab Centers</h3>
+                    <p data-en="Find centers near you" data-mr="आपल्या जवळील केंद्रे शोधा">Find centers near you</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h2>5000+</h2>
+                    <p data-en="Lives Transformed" data-mr="बदललेली जीवने">Lives Transformed</p>
+                </div>
+                <div class="stat-item">
+                    <h2>50+</h2>
+                    <p data-en="Rehab Centers" data-mr="पुनर्वसन केंद्रे">Rehab Centers</p>
+                </div>
+                <div class="stat-item">
+                    <h2>100+</h2>
+                    <p data-en="Counselors" data-mr="समुपदेशक">Counselors</p>
+                </div>
+                <div class="stat-item">
+                    <h2>24/7</h2>
+                    <p data-en="Support Available" data-mr="उपलब्ध समर्थन">Support Available</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title" data-en="Success Stories" data-mr="यशस्वी कथा">Success Stories</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial-card">
+                    <div class="quote">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p data-en="This portal connected me with the right rehab center and support group. Today, I'm 2 years sober and building a new life." data-mr="या पोर्टलने मला योग्य पुनर्वसन केंद्र आणि समर्थन गटाशी जोडले. आज, मी 2 वर्षे व्यसनमुक्त आहे आणि नवीन जीवन जगत आहे.">This portal connected me with the right rehab center and support group. Today, I'm 2 years sober and building a new life.</p>
+                    <div class="testimonial-author">
+                        <h4>Rahul S.</h4>
+                        <p data-en="Recovered from alcohol addiction" data-mr="मद्य व्यसनातून बरे झाले">Recovered from alcohol addiction</p>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p data-en="As a mother, I found invaluable resources here to help my son through his recovery journey. The family support guides made all the difference." data-mr="एक आई म्हणून, मला माझ्या मुलाला त्याच्या पुनर्प्राप्ती प्रवासात मदत करण्यासाठी येथे अमूल्य संसाधने सापडली. कुटुंब समर्थन मार्गदर्शकांनी फरक केला.">As a mother, I found invaluable resources here to help my son through his recovery journey. The family support guides made all the difference.</p>
+                    <div class="testimonial-author">
+                        <h4>Sunita P.</h4>
+                        <p data-en="Parent of a recovered addict" data-mr="व्यसनमुक्त झालेल्या मुलाची आई">Parent of a recovered addict</p>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p data-en="The self-assessment tool was my wake-up call. It helped me recognize my problem and seek help before things got worse." data-mr="स्वयं-मूल्यांकन साधन माझा जागरूकता कॉल होता. त्याने मला माझी समस्या ओळखण्यास आणि गोष्टी वाईट होण्यापूर्वी मदत मागण्यास मदत केली.">The self-assessment tool was my wake-up call. It helped me recognize my problem and seek help before things got worse.</p>
+                    <div class="testimonial-author">
+                        <h4>Aditya M.</h4>
+                        <p data-en="In recovery for 1 year" data-mr="1 वर्षापासून पुनर्प्राप्ती प्रक्रियेत">In recovery for 1 year</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="upcoming-events">
+        <div class="container">
+            <h2 class="section-title" data-en="Upcoming Events" data-mr="आगामी कार्यक्रम">Upcoming Events</h2>
+            <div class="events-grid">
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="day">15</span>
+                        <span class="month">Aug</span>
+                    </div>
+                    <div class="event-details">
+                        <h3 data-en="Addiction Awareness Workshop" data-mr="व्यसन जागरूकता कार्यशाळा">Addiction Awareness Workshop</h3>
+                        <p class="event-location"><i class="fas fa-map-marker-alt"></i> Sangli Zilla Parishad Hall</p>
+                        <p class="event-time"><i class="far fa-clock"></i> 10:00 AM - 1:00 PM</p>
+                        <a href="pages/events.html" class="btn btn-sm" data-en="Register" data-mr="नोंदणी करा">Register</a>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="day">22</span>
+                        <span class="month">Aug</span>
+                    </div>
+                    <div class="event-details">
+                        <h3 data-en="Family Support Webinar" data-mr="कुटुंब समर्थन वेबिनार">Family Support Webinar</h3>
+                        <p class="event-location"><i class="fas fa-video"></i> Online</p>
+                        <p class="event-time"><i class="far fa-clock"></i> 6:00 PM - 7:30 PM</p>
+                        <a href="pages/events.html" class="btn btn-sm" data-en="Register" data-mr="नोंदणी करा">Register</a>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="day">30</span>
+                        <span class="month">Aug</span>
+                    </div>
+                    <div class="event-details">
+                        <h3 data-en="Recovery Success Celebration" data-mr="पुनर्प्राप्ती यश साजरा">Recovery Success Celebration</h3>
+                        <p class="event-location"><i class="fas fa-map-marker-alt"></i> Miraj Community Center</p>
+                        <p class="event-time"><i class="far fa-clock"></i> 4:00 PM - 7:00 PM</p>
+                        <a href="pages/events.html" class="btn btn-sm" data-en="Register" data-mr="नोंदणी करा">Register</a>
+                    </div>
+                </div>
+            </div>
+            <div class="view-all">
+                <a href="pages/events.html" class="btn btn-outline" data-en="View All Events" data-mr="सर्व कार्यक्रम पहा">View All Events</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2 data-en="Ready to Take the First Step?" data-mr="पहिले पाऊल टाकण्यास तयार आहात?">Ready to Take the First Step?</h2>
+            <p data-en="Join thousands who have successfully overcome addiction with our support" data-mr="आमच्या समर्थनासह यशस्वीरित्या व्यसनावर मात केलेल्या हजारो लोकांमध्ये सामील व्हा">Join thousands who have successfully overcome addiction with our support</p>
+            <div class="cta-buttons">
+                <a href="pages/assessment.html" class="btn btn-primary" data-en="Start Assessment" data-mr="मूल्यांकन सुरू करा">Start Assessment</a>
+                <a href="tel:1800-11-0031" class="btn btn-secondary" data-en="Call Helpline" data-mr="हेल्पलाइनला कॉल करा">Call Helpline</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="assets/images/logo.jpeg" alt="Nasha Mukti Portal Logo">
+                        <h3>Nasha Mukti Portal</h3>
+                    </div>
+                    <p data-en="An initiative by Sangli Zilla Parishad to combat addiction and support recovery" data-mr="व्यसनाविरुद्ध लढण्यासाठी आणि पुनर्प्राप्तीला समर्थन देण्यासाठी सांगली जिल्हा परिषदेचा एक उपक्रम">An initiative by Sangli Zilla Parishad to combat addiction and support recovery</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 data-en="Quick Links" data-mr="त्वरित दुवे">Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html" data-en="Home" data-mr="मुख्यपृष्ठ">Home</a></li>
+                        <li><a href="pages/about.html" data-en="About Us" data-mr="आमच्याबद्दल">About Us</a></li>
+                        <li><a href="pages/addiction.html" data-en="Understanding Addiction" data-mr="व्यसन समजून घेणे">Understanding Addiction</a></li>
+                        <li><a href="pages/treatment.html" data-en="Treatment" data-mr="उपचार">Treatment</a></li>
+                        <li><a href="pages/find-help.html" data-en="Find Help" data-mr="मदत शोधा">Find Help</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 data-en="Resources" data-mr="संसाधने">Resources</h4>
+                    <ul>
+                        <li><a href="pages/resources/videos.html" data-en="Videos" data-mr="व्हिडिओ">Videos</a></li>
+                        <li><a href="pages/resources/parent-guides.html" data-en="Parent Guides" data-mr="पालक मार्गदर्शिका">Parent Guides</a></li>
+                        <li><a href="pages/resources/legal-help.html" data-en="Legal Help" data-mr="कायदेशीर मदत">Legal Help</a></li>
+                        <li><a href="pages/resources/community-forum.html" data-en="Community Forum" data-mr="समुदाय मंच">Community Forum</a></li>
+                        <li><a href="pages/resources/events.html
+                            " data-en="Events" data-mr="कार्यक्रम">Events</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 data-en="Contact Us" data-mr="संपर्क करा">Contact Us</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> <span data-en="Sangli Zilla Parishad, Maharashtra" data-mr="सांगली जिल्हा परिषद, महाराष्ट्र">Sangli Zilla Parishad, Maharashtra</span></li>
+                        <li><i class="fas fa-phone-alt"></i> <a href="tel:1800-11-0031">1800-11-0031 (Toll Free)</a></li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:info@nashmuktisangli.gov.in">info@nashmuktisangli.gov.in</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Nasha Mukti Portal - Sangli Zilla Parishad. All Rights Reserved.</p>
+                <ul class="footer-bottom-links">
+                    <li><a href="pages/privacy-policy.html" data-en="Privacy Policy" data-mr="गोपनीयता धोरण">Privacy Policy</a></li>
+                    <li><a href="pages/terms.html" data-en="Terms of Use" data-mr="वापरण्याच्या अटी">Terms of Use</a></li>
+                    <li><a href="pages/disclaimer.html" data-en="Disclaimer" data-mr="अस्वीकरण">Disclaimer</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal" id="login-modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 data-en="Login" data-mr="लॉगिन">Login</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="login-email" data-en="Email" data-mr="ईमेल">Email</label>
+                    <input type="email" id="login-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password" data-en="Password" data-mr="पासवर्ड">Password</label>
+                    <input type="password" id="login-password" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block" data-en="Login" data-mr="लॉगिन">Login</button>
+                <div class="form-footer">
+                    <a href="#" id="forgot-password" data-en="Forgot Password?" data-mr="पासवर्ड विसरलात?">Forgot Password?</a>
+                    <p data-en="Don't have an account?" data-mr="खाते नाही?">Don't have an account? <a href="#" id="show-register" data-en="Register" data-mr="नोंदणी करा">Register</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div class="modal" id="register-modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 data-en="Create Account" data-mr="खाते तयार करा">Create Account</h2>
+            <form id="register-form">
+                <div class="form-group">
+                    <label for="register-name" data-en="Full Name" data-mr="पूर्ण नाव">Full Name</label>
+                    <input type="text" id="register-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-email" data-en="Email" data-mr="ईमेल">Email</label>
+                    <input type="email" id="register-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-phone" data-en="Phone Number" data-mr="फोन नंबर">Phone Number</label>
+                    <input type="tel" id="register-phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-password" data-en="Password" data-mr="पासवर्ड">Password</label>
+                    <input type="password" id="register-password" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-confirm-password" data-en="Confirm Password" data-mr="पासवर्ड पुष्टी करा">Confirm Password</label>
+                    <input type="password" id="register-confirm-password" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block" data-en="Register" data-mr="नोंदणी करा">Register</button>
+                <div class="form-footer">
+                    <p data-en="Already have an account?" data-mr="आधीपासूनच खाते आहे?">Already have an account? <a href="#" id="show-login" data-en="Login" data-mr="लॉगिन">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html> 

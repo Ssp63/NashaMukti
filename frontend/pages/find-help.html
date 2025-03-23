@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Help - Nasha Mukti Portal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <div class="language-toggle">
+        <select id="language-selector">
+            <option value="english">English</option>
+            <option value="marathi">मराठी</option>
+        </select>
+    </div>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="../assets/images/logo.jpeg" alt="Nasha Mukti Portal Logo">
+                <div class="logo-text">
+                    <h1 data-en="Nasha Mukti Portal" data-mr="नशा मुक्ती पोर्टल">Nasha Mukti Portal</h1>
+                    <p data-en="Sangli Zilla Parishad" data-mr="सांगली जिल्हा परिषद">Sangli Zilla Parishad</p>
+                </div>
+            </div>
+            
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="../index.html" data-en="Home" data-mr="मुख्यपृष्ठ">Home</a></li>
+                    <li><a href="about.html" data-en="About Us" data-mr="आमच्याबद्दल">About Us</a></li>
+                    <li><a href="addiction.html" data-en="Understanding Addiction" data-mr="व्यसन समजून घेणे">Understanding Addiction</a></li>
+                    <li><a href="assessment.html" data-en="Self-Assessment" data-mr="स्वयं-मूल्यांकन">Self-Assessment</a></li>
+                    <li><a href="treatment.html" data-en="Treatment" data-mr="उपचार">Treatment</a></li>
+                    <li><a href="find-help.html" class="active" data-en="Find Help" data-mr="मदत शोधा">Find Help</a></li>
+                </ul>
+            </nav>
+            
+            <div class="auth-buttons">
+                <button id="login-btn" class="btn btn-outline" data-en="Login" data-mr="लॉगिन">Login</button>
+                <button id="register-btn" class="btn btn-primary" data-en="Register" data-mr="नोंदणी">Register</button>
+            </div>
+            
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <div class="page-banner">
+        <div class="container">
+            <h1 data-en="Find Help" data-mr="मदत शोधा">Find Help</h1>
+            <p data-en="Connect with addiction treatment centers, counselors, and support resources" data-mr="व्यसन उपचार केंद्रे, समुपदेशक आणि समर्थन संसाधनांशी जोडा">Connect with addiction treatment centers, counselors, and support resources</p>
+        </div>
+    </div>
+
+    <section class="help-search">
+        <div class="container">
+            <div class="search-container">
+                <h2 data-en="Find Treatment Centers" data-mr="उपचार केंद्रे शोधा">Find Treatment Centers</h2>
+                <p data-en="Search for treatment facilities and resources near you" data-mr="आपल्या जवळपासच्या उपचार सुविधा आणि संसाधने शोधा">Search for treatment facilities and resources near you</p>
+                
+                <div class="search-form">
+                    <div class="form-group">
+                        <label for="location" data-en="Location" data-mr="स्थान">Location</label>
+                        <input type="text" id="location" placeholder="Enter city, district or pin code">
+                    </div>
+                    <div class="form-group">
+                        <label for="treatment-type" data-en="Treatment Type" data-mr="उपचार प्रकार">Treatment Type</label>
+                        <select id="treatment-type">
+                            <option value="all">All Types</option>
+                            <option value="inpatient">Inpatient/Residential</option>
+                            <option value="outpatient">Outpatient</option>
+                            <option value="detox">Detoxification</option>
+                            <option value="counseling">Counseling</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="addiction-type" data-en="Addiction Type" data-mr="व्यसन प्रकार">Addiction Type</label>
+                        <select id="addiction-type">
+                            <option value="all">All Types</option>
+                            <option value="alcohol">Alcohol</option>
+                            <option value="drugs">Drugs</option>
+                            <option value="tobacco">Tobacco</option>
+                            <option value="behavioral">Behavioral</option>
+                        </select>
+                    </div>
+                    <button type="button" class="btn btn-primary" id="search-btn" data-en="Search" data-mr="शोधा">
+                        <i class="fas fa-search"></i> Search
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="help-results">
+        <div class="container">
+            <h2 class="section-title" data-en="Treatment Centers" data-mr="उपचार केंद्रे">Treatment Centers</h2>
+            
+            <div class="results-filter">
+                <div class="filter-options">
+                    <span data-en="Filter By:" data-mr="फिल्टर करा:">Filter By:</span>
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="government">Government</button>
+                    <button class="filter-btn" data-filter="private">Private</button>
+                    <button class="filter-btn" data-filter="ngo">NGO</button>
+                </div>
+                <div class="sort-options">
+                    <span data-en="Sort By:" data-mr="क्रमवारी लावा:">Sort By:</span>
+                    <select id="sort-option">
+                        <option value="distance">Distance</option>
+                        <option value="rating">Rating</option>
+                        <option value="name">Name</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="centers-grid">
+                <div class="center-card" data-type="government">
+                    <div class="center-image">
+                        <img src="../assets/images/center-1.jpg" alt="Sangli Government Rehab Center">
+                        <span class="center-badge government">Government</span>
+                    </div>
+                    <div class="center-details">
+                        <h3>Sangli Government Rehab Center</h3>
+                        <div class="center-rating">
+                            <span class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </span>
+                            <span class="rating-count">4.5 (120 reviews)</span>
+                        </div>
+                        <p class="center-address"><i class="fas fa-map-marker-alt"></i> Civil Hospital Campus, Sangli, Maharashtra - 416416</p>
+                        <p class="center-distance"><i class="fas fa-route"></i> 2.5 km away</p>
+                        <p class="center-contact"><i class="fas fa-phone"></i> +91 233 2325678</p>
+                        
+                        <div class="center-services">
+                            <span class="service-tag">Detoxification</span>
+                            <span class="service-tag">Inpatient</span>
+                            <span class="service-tag">Counseling</span>
+                            <span class="service-tag">Free</span>
+                        </div>
+                        
+                        <div class="center-actions">
+                            <a href="#" class="btn btn-outline btn-sm" data-en="View Details" data-mr="तपशील पहा">View Details</a>
+                            <a href="#" class="btn btn-primary btn-sm" data-en="Contact" data-mr="संपर्क करा">Contact</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="center-card" data-type="private">
+                    <div class="center-image">
+                        <img src="../assets/images/center-2.jpg" alt="New Life Rehabilitation Center">
+                        <span class="center-badge private">Private</span>
+                    </div>
+                    <div class="center-details">
+                        <h3>New Life Rehabilitation Center</h3>
+                        <div class="center-rating">
+                            <span class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                            <span class="rating-count">4.0 (85 reviews)</span>
+                        </div>
+                        <p class="center-address"><i class="fas fa-map-marker-alt"></i> Vishrambag, Sangli, Maharashtra - 416415</p>
+                        <p class="center-distance"><i class="fas fa-route"></i> 3.8 km away</p>
+                        <p class="center-contact"><i class="fas fa-phone"></i> +91 233 2367890</p>
+                        
+                        <div class="center-services">
+                            <span class="service-tag">Luxury Facilities</span>
+                            <span class="service-tag">Inpatient</span>
+                            <span class="service-tag">Therapy</span>
+                            <span class="service-tag">Yoga</span>
+                        </div>
+                        
+                        <div class="center-actions">
+                            <a href="#" class="btn btn-outline btn-sm" data-en="View Details" data-mr="तपशील पहा">View Details</a>
+                            <a href="#" class="btn btn-primary btn-sm" data-en="Contact" data-mr="संपर्क करा">Contact</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="center-card" data-type="ngo">
+                    <div class="center-image">
+                        <img src="../assets/images/center-3.jpg" alt="Jeevan Jyoti Foundation">
+                        <span class="center-badge ngo">NGO</span>
+                    </div>
+                    <div class="center-details">
+                        <h3>Jeevan Jyoti Foundation</h3>
+                        <div class="center-rating">
+                            <span class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </span>
+                            <span class="rating-count">4.9 (150 reviews)</span>
+                        </div>
+                        <p class="center-address"><i class="fas fa-map-marker-alt"></i> Miraj Road, Sangli, Maharashtra - 416410</p>
+                        <p class="center-distance"><i class="fas fa-route"></i> 5.2 km away</p>
+                        <p class="center-contact"><i class="fas fa-phone"></i> +91 233 2389012</p>
+                        
+                        <div class="center-services">
+                            <span class="service-tag">Free Treatment</span>
+                            <span class="service-tag">Outpatient</span>
+                            <span class="service-tag">Family Support</span>
+                            <span class="service-tag">Job Training</span>
+                        </div>
+                        
+                        <div class="center-actions">
+                            <a href="#" class="btn btn-outline btn-sm" data-en="View Details" data-mr="तपशील पहा">View Details</a>
+                            <a href="#" class="btn btn-primary btn-sm" data-en="Contact" data-mr="संपर्क करा">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pagination">
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <button class="page-btn next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="helplines">
+        <div class="container">
+            <h2 class="section-title" data-en="Emergency Helplines" data-mr="आपत्कालीन हेल्पलाइन">Emergency Helplines</h2>
+            <p class="section-subtitle" data-en="Available 24/7 for immediate assistance" data-mr="तात्काळ मदतीसाठी 24/7 उपलब्ध">Available 24/7 for immediate assistance</p>
+            
+            <div class="helplines-grid">
+                <div class="helpline-card">
+                    <div class="icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3 data-en="National Toll-Free Helpline" data-mr="राष्ट्रीय टोल-फ्री हेल्पलाइन">National Toll-Free Helpline</h3>
+                    <p class="phone">1800-11-0031</p>
+                    <p class="description" data-en="National Drug Dependence Treatment Centre" data-mr="राष्ट्रीय ड्रग डिपेंडन्स ट्रीटमेंट सेंटर">National Drug Dependence Treatment Centre</p>
+                </div>
+                
+                <div class="helpline-card">
+                    <div class="icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3 data-en="Sangli Addiction Helpline" data-mr="सांगली व्यसन हेल्पलाइन">Sangli Addiction Helpline</h3>
+                    <p class="phone">0233-2374567</p>
+                    <p class="description" data-en="Local helpline for Sangli district residents" data-mr="सांगली जिल्ह्यातील रहिवाशांसाठी स्थानिक हेल्पलाइन">Local helpline for Sangli district residents</p>
+                </div>
+                
+                <div class="helpline-card">
+                    <div class="icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3 data-en="Mental Health Helpline" data-mr="मानसिक आरोग्य हेल्पलाइन">Mental Health Helpline</h3>
+                    <p class="phone">1800-599-0019</p>
+                    <p class="description" data-en="National Mental Health Helpline (KIRAN)" data-mr="राष्ट्रीय मानसिक आरोग्य हेल्पलाइन (किरण)">National Mental Health Helpline (KIRAN)</p>
+                </div>
+                
+                <div class="helpline-card">
+                    <div class="icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3 data-en="Women's Helpline" data-mr="महिला हेल्पलाइन">Women's Helpline</h3>
+                    <p class="phone">1800-102-7282</p>
+                    <p class="description" data-en="Special helpline for women facing addiction issues" data-mr="व्यसनाच्या समस्यांना तोंड देणाऱ्या महिलांसाठी विशेष हेल्पलाइन">Special helpline for women facing addiction issues</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="support-resources">
+        <div class="container">
+            <h2 class="section-title" data-en="Additional Resources" data-mr="अतिरिक्त संसाधने">Additional Resources</h2>
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <div class="icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 data-en="Support Groups" data-mr="समर्थन गट">Support Groups</h3>
+                    <p data-en="Find local peer support groups to help with recovery" data-mr="पुनर्प्राप्तीसाठी मदत करण्यासाठी स्थानिक समवयस्क समर्थन गट शोधा">Find local peer support groups to help with recovery</p>
+                    <a href="#" class="btn btn-outline" data-en="Find Groups" data-mr="गट शोधा">Find Groups</a>
+                </div>
+                
+                <div class="resource-card">
+                    <div class="icon">
+                        <i class="fas fa-book-reader"></i>
+                    </div>
+                    <h3 data-en="Educational Materials" data-mr="शैक्षणिक सामग्री">Educational Materials</h3>
+                    <p data-en="Access free e-books, pamphlets, and videos about addiction" data-mr="व्यसनाबद्दल मोफत ई-बुक्स, पॅम्फलेट्स आणि व्हिडिओ ऍक्सेस करा">Access free e-books, pamphlets, and videos about addiction</p>
+                    <a href="#" class="btn btn-outline" data-en="Browse Library" data-mr="लायब्ररी ब्राउझ करा">Browse Library</a>
+                </div>
+                
+                <div class="resource-card">
+                    <div class="icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3 data-en="Family Support" data-mr="कुटुंब समर्थन">Family Support</h3>
+                    <p data-en="Resources for families affected by a loved one's addiction" data-mr="प्रियजनाच्या व्यसनाने प्रभावित कुटुंबांसाठी संसाधने">Resources for families affected by a loved one's addiction</p>
+                    <a href="#" class="btn btn-outline" data-en="Get Support" data-mr="समर्थन मिळवा">Get Support</a>
+                </div>
+                
+                <div class="resource-card">
+                    <div class="icon">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <h3 data-en="Self-Help Tools" data-mr="स्वयं-मदत साधने">Self-Help Tools</h3>
+                    <p data-en="Tools and techniques for maintaining sobriety and preventing relapse" data-mr="शुद्धता टिकवून ठेवण्यासाठी आणि पुनरावृत्ती रोखण्यासाठी साधने आणि तंत्रे">Tools and techniques for maintaining sobriety and preventing relapse</p>
+                    <a href="#" class="btn btn-outline" data-en="Explore Tools" data-mr="साधने एक्सप्लोर करा">Explore Tools</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="../assets/images/logo.jpeg" alt="Nasha Mukti Portal Logo">
+                        <h3>Nasha Mukti Portal</h3>
+                    </div>
+                    <p data-en="An initiative by Sangli Zilla Parishad to combat addiction and support recovery" data-mr="व्यसनाविरुद्ध लढण्यासाठी आणि पुनर्प्राप्तीला समर्थन देण्यासाठी सांगली जिल्हा परिषदेचा एक उपक्रम">An initiative by Sangli Zilla Parishad to combat addiction and support recovery</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 data-en="Quick Links" data-mr="त्वरित दुवे">Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html" data-en="Home" data-mr="मुख्यपृष्ठ">Home</a></li>
+                        <li><a href="about.html" data-en="About Us" data-mr="आमच्याबद्दल">About Us</a></li>
+                        <li><a href="addiction.html" data-en="Understanding Addiction" data-mr="व्यसन समजून घेणे">Understanding Addiction</a></li>
+                        <li><a href="treatment.html" data-en="Treatment" data-mr="उपचार">Treatment</a></li>
+                        <li><a href="find-help.html" data-en="Find Help" data-mr="मदत शोधा">Find Help</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 data-en="Resources" data-mr="संसाधने">Resources</h4>
+                    <ul>
+                        <li><a href="resources/videos.html" data-en="Videos" data-mr="व्हिडिओ">Videos</a></li>
+                        <li><a href="resources/parent-guides.html" data-en="Parent Guides" data-mr="पालक मार्गदर्शिका">Parent Guides</a></li>
+                        <li><a href="resources/legal-help.html" data-en="Legal Help" data-mr="कायदेशीर मदत">Legal Help</a></li>
+                        <li><a href="resources/community-forum.html" data-en="Community Forum" data-mr="समुदाय मंच">Community Forum</a></li>
+                        <li><a href="resources/events.html" data-en="Events" data-mr="कार्यक्रम">Events</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 data-en="Contact Us" data-mr="संपर्क करा">Contact Us</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> <span data-en="Sangli Zilla Parishad, Maharashtra" data-mr="सांगली जिल्हा परिषद, महाराष्ट्र">Sangli Zilla Parishad, Maharashtra</span></li>
+                        <li><i class="fas fa-phone-alt"></i> <a href="tel:1800-11-0031">1800-11-0031 (Toll Free)</a></li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:info@nashmuktisangli.gov.in">info@nashmuktisangli.gov.in</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Nasha Mukti Portal - Sangli Zilla Parishad. All Rights Reserved.</p>
+                <ul class="footer-bottom-links">
+                    <li><a href="privacy-policy.html" data-en="Privacy Policy" data-mr="गोपनीयता धोरण">Privacy Policy</a></li>
+                    <li><a href="terms.html" data-en="Terms of Use" data-mr="वापरण्याच्या अटी">Terms of Use</a></li>
+                    <li><a href="disclaimer.html" data-en="Disclaimer" data-mr="अस्वीकरण">Disclaimer</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/script.js"></script>
+</body>
+</html> 
