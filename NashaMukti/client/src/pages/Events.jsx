@@ -1,7 +1,6 @@
-import { useEffect, useState, useCallback } from 'react';
+import { useEffect, useState, useCallback, useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link as RouterLink } from 'react-router-dom';
-import debounce from 'lodash/debounce';
 import {
   Container,
   Grid,
@@ -25,6 +24,27 @@ import EventIcon from '@mui/icons-material/Event';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import { useLanguage } from '../context/LanguageContext';
 
+// Custom debounce hook
+const useDebounce = (callback, delay) => {
+  const timeoutRef = useRef(null);
+
+  useEffect(() => {
+    return () => {
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current);
+      }
+    };
+  }, []);
+
+  return (...args) => {
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+    }
+    timeoutRef.current = setTimeout(() => {
+      callback(...args);
+    }, delay);
+  };
+};
 
 const Events = () => {
   const dispatch = useDispatch();
@@ -43,14 +63,11 @@ const Events = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [localPage, setLocalPage] = useState(1);
 
-  // Debounced search function
-  const debouncedSearch = useCallback(
-    debounce((value) => {
-      setFilters(prev => ({ ...prev, search: value }));
-      setLocalPage(1); // Reset to first page when searching
-    }, 500),
-    []
-  );
+  // Custom debounced search function
+  const debouncedSearch = useDebounce((value) => {
+    setFilters(prev => ({ ...prev, search: value }));
+    setLocalPage(1); // Reset to first page when searching
+  }, 500);
 
   // Extract unique districts from events
   useEffect(() => {
