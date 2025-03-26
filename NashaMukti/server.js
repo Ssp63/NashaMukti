@@ -13,7 +13,7 @@ const app = express();
 // Middleware
 // app.use(cors());
 app.use(cors({
-  origin: ['https://your-frontend.vercel.app', 'http://localhost:5173'],
+  origin: ['https://nasha-mukti-portal.vercel.app', 'http://localhost:5173'],
   credentials: true
 }));
 
