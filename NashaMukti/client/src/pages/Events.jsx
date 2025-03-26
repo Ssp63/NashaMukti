@@ -1,6 +1,7 @@
 import { useEffect, useState, useCallback } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link as RouterLink } from 'react-router-dom';
+import debounce from 'lodash/debounce';
 import {
   Container,
   Grid,
@@ -23,7 +24,7 @@ import { getEvents } from '../store/slices/eventSlice';
 import EventIcon from '@mui/icons-material/Event';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import { useLanguage } from '../context/LanguageContext';
-import debounce from 'lodash/debounce';
+
 
 const Events = () => {
   const dispatch = useDispatch();
